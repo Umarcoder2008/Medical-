@@ -150,13 +150,6 @@
         padding: 10px 20px;
       }
 
-
-
-
-
-
-
-
     }
 
     h2, h3 {
@@ -242,8 +235,9 @@
       
     }
     
-    .welcome-text h2 {
+    .welcome-text h1 {
       margin-bottom: 20px;
+     
     }
     
     .welcome-text ul {
@@ -253,17 +247,17 @@
     }
     
     .timetable {
-      width: 50%;
-      height: 90vh;
+      width: auto;
+      height: 120%;
+      object-fit: contain;
       background-color: #e6e6fa;
-      display: flex;
-justify-content: center;
-align-items: center;
+      justify-content: right;
+      align-items: right;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       display: flex;
-      background-image: url('./doc\ schedule.webp');
       object-fit: cover;
+      margin: 3 auto;
     }
     
     .timtable-inerone {
@@ -295,7 +289,7 @@ align-items: center;
       background-color: #f7f7f7;
     }
     
-    .departments h2 {
+    .departments h1 {
       margin-bottom: 10px;
     }
     
@@ -309,10 +303,10 @@ align-items: center;
       justify-content: center;
       gap: 20px;
     }
-    
+
     .department-box {
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       background-color: #fff;
       display: flex;
       justify-content: center;
@@ -321,4 +315,22 @@ align-items: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       font-weight: bold;
       text-align: center;
+      border-radius: 10%;
+      
+    }
+
+
+    .department-box {
+      background-color: #e0d7d7;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .department-box:hover {
+      background-color: #92a2a3;
+      transform: translateY(-10px);
     }
